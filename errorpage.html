@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<title>WebApp Error Page</title>
+<style type="text/css">
+<!--
+body{ 
+margin:opx;
+text-align:center;
+vertical-align:middle;
+background-color:#eeeeee;
+}
+div{
+width:900px;
+height:100px;
+margin:0px auto;
+}
+div span{
+font-size:24px;
+font-family:"幼圆";
+font-weight:bold; 
+}
+div #tipstext{
+font-size:14px;
+font-family:"幼圆";
+font-weight:bold; 
+}
+-->
+</style>
+<script type="text/javascript">
+	function setTitle(title)
+	{
+		var sp = document.getElementById("errortext");
+		sp.innerText = title;
+	}
+</script>
+</head>
+
+<div style="position:absolute; top:50%; left:50%; margin:-35px 0 0 -275px; width:550px; height:70px">
+	<span>无法连接 </span>	<span id="errortext"></span>
+	<br>
+	<span id="tipstext">请检查电脑网络连接或网络服务端是否畅通</span>
+	<br>
+	<span id="tipstext">确认网络畅通后请<a href="#" onclick="window.external.reopenapp();">点这里重试</a></span>
+</div>
+<body>
+</body>
+</html>
